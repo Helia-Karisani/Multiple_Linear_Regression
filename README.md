@@ -17,7 +17,7 @@ The notebook demonstrates:
 - Training linear regression models with scikit-learn
 - Recovering coefficients in original units after normalization
 - Interpreting regression parameters
-- Visualizing a **3D regression plane** with data points above and below the plane
+- Visualizing a **3D regression plane** with data points above and below the plane (THIS MIGHT BE MISSING)
 
 ---
 
