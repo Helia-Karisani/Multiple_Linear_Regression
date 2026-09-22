@@ -5,7 +5,7 @@ The project emphasizes **correct preprocessing, model interpretation, and visual
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 We build and analyze linear regression models to predict **CO2 Emissions** based on:
 
@@ -21,13 +21,13 @@ The notebook demonstrates:
 
 ---
 
-## 📂 Files
+## Files
 
 - `Multiple_Linear_Regression.ipynb` — Main notebook (run top to bottom)
 
 ---
 
-## ⚙️ Dependencies
+## Dependencies
 
 This project uses standard Python data-science libraries:
 
@@ -38,7 +38,7 @@ This project uses standard Python data-science libraries:
 
 ---
 
-## 🧮 How Linear Regression Works (Brief Math)
+## How Linear Regression Works (Brief Math)
 
 ### Model Form
 
@@ -99,7 +99,7 @@ This notebook explicitly performs this conversion.
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repository:
    ```bash
@@ -116,7 +116,7 @@ This notebook explicitly performs this conversion.
 
 ---
 
-## 🧠 What the Notebook Covers
+## What the Notebook Covers
 
 ### 1. Data Preparation
 - Load and inspect the dataset
@@ -153,7 +153,7 @@ This notebook explicitly performs this conversion.
 
 ---
 
-## ✅ Final Outcome
+## Final Outcome
 
 By the end of the notebook, we:
 
@@ -165,6 +165,6 @@ By the end of the notebook, we:
 
 ---
 
-## 📄 License
+## License
 
 This project is provided for educational purposes.
