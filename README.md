@@ -1,7 +1,7 @@
 # Multiple Linear Regression – CO2 Emissions
 
-This repository contains an end-to-end implementation of **multiple linear regression** to model **CO2 emissions** using real vehicle features.
-The project focuses on **correct preprocessing, model interpretation, and visualization in real units**.
+This repository contains a complete, end-to-end implementation of **multiple linear regression** to model **CO2 emissions** using real vehicle features.  
+The project emphasizes **correct preprocessing, model interpretation, and visualization in real units**.
 
 ---
 
@@ -12,22 +12,24 @@ We build and analyze linear regression models to predict **CO2 Emissions** based
 - `ENGINESIZE`
 - `FUELCONSUMPTION`
 
-The notebook covers:
+The notebook demonstrates:
 - Feature scaling and why it matters
 - Training linear regression models with scikit-learn
 - Recovering coefficients in original units after normalization
 - Interpreting regression parameters
-- Visualizing a **3D regression plane** with data points above and below the plane
+- Visualizing a **3D regression plane** with data points above and below the plane (THIS MIGHT BE MISSING)
 
 ---
 
 ## Files
 
-- `Multiple_Linear_Regression.ipynb`: main notebook (run top to bottom)
+- `Multiple_Linear_Regression.ipynb` — Main notebook (run top to bottom)
 
 ---
 
 ## Dependencies
+
+This project uses standard Python data-science libraries:
 
 - `numpy`
 - `pandas`
@@ -73,6 +75,8 @@ This is equivalent to solving the **normal equations**:
 β = (XᵀX)⁻¹Xᵀy
 ```
 
+(scikit-learn computes this efficiently using numerical linear algebra)
+
 ---
 
 ### Effect of Standardization
@@ -83,15 +87,15 @@ When features are standardized:
 x_std = (x − μ) / σ
 ```
 
-The learned coefficients are in standardized space.
-To interpret results in **real units**, coefficients are transformed back:
+The learned coefficients correspond to standardized space.  
+To interpret results in **real units**, coefficients must be transformed back:
 
 ```
 β_real = β_std / σ
 β₀_real = β₀_std − Σ (μ · β_std / σ)
 ```
 
-The notebook performs this conversion explicitly.
+This notebook explicitly performs this conversion.
 
 ---
 
@@ -99,8 +103,8 @@ The notebook performs this conversion explicitly.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Helia-Karisani/Multiple_Linear_Regression.git
-   cd Multiple_Linear_Regression
+   git clone <your-repo-url>
+   cd <repo-name>
    ```
 
 2. Open the notebook:
@@ -108,7 +112,7 @@ The notebook performs this conversion explicitly.
    jupyter notebook Multiple_Linear_Regression.ipynb
    ```
 
-3. Run all cells from top to bottom.
+3. Run **all cells from top to bottom**
 
 ---
 
@@ -121,25 +125,47 @@ The notebook performs this conversion explicitly.
 
 ### 2. Feature Scaling
 - Apply `StandardScaler`
-- Why scaling is needed for learning and visualization
+- Explain why scaling is needed for learning and visualization
 - Verify zero mean and unit variance
 
 ### 3. Train / Test Split
 - Split data into training and testing sets
-- Keep shapes consistent for scikit-learn
+- Ensure consistent shapes for scikit-learn
 
 ### 4. Model Training
-- Train simple and multiple linear regression
+- Train:
+  - Simple linear regression
+  - Multiple linear regression
 - Extract coefficients and intercept
 
 ### 5. Model Interpretation
-- Convert coefficients back to original feature units:
+- Convert coefficients **back to original feature units**
+- Understand the regression equation in real-world terms:
   ```
   CO2 = b0 + b1 · ENGINESIZE + b2 · FUELCONSUMPTION
   ```
 
 ### 6. Visualization
 - 2D scatter plots
-- 3D scatter with the regression plane
-- Points colored by whether they lie above or below the plane
-- Plotted in original units, not standardized space
+- **3D scatter + regression plane**
+- Points colored by whether they lie **above or below** the regression plane
+- Visualization performed **in original units**, not standardized space
+
+---
+
+## Final Outcome
+
+By the end of the notebook, we:
+
+- Train accurate linear regression models
+- Understand how scaling affects learning and visualization
+- Correctly interpret model parameters
+- Recover coefficients in real units
+- Produce a clean 3D visualization of a regression plane
+
+---
+
+## License
+
+This project is provided for educational purposes.
+
