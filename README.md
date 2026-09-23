@@ -23,7 +23,7 @@ The notebook demonstrates:
 
 ## Files
 
-- `Multiple_Linear_Regression.ipynb` — Main notebook (run top to bottom)
+- `Multiple_Linear_Regression.ipynb`, Main notebook (run top to bottom)
 
 ---
 
